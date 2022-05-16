@@ -4,49 +4,179 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Adilson Yango Muieba">
-    <title>About Yango</title>
+    <title>Portifólio - AYM</title>
 
-    <!--links-->
-    <link rel="stylesheet" href="stylec.css">
+    <link rel="icon" type="image/png" href="media/icon2.png"/>
+    <link rel="stylesheet" media="(min-width:500px)" href="style-pc.css">
+    <link rel="stylesheet" media="(max-width:499px)" href="style-phone.css">
 </head>
-<body>
+<body id="a" onload="setInterval(mudarFundoPhone(), 100)">
     <header>
-        <div class="cabecalho">
+        <div class="header">
             <div class="span">
-                <span class="icon">
-                    <img src="media/icon.png" alt="">
-                </span>
+                <span><img src="media/icon2.png" alt="logo Yango"></span>
+                <div>Portfólio</div>
+            </div>
+            <div class="id no-pc">
+                <h1>PORTIFÓLIO - ADILSON YANGO MUIEBA</h1>
             </div>
             <div class="menu">
-                <nav id="menu">
+                <button id="btn-menu" class="btn-menu-phone no-pc" onclick="menuPhone(1)"></button>
+                <nav class="menu no-phone" id="navMenu">
+                <img src="media/yango.png" alt="Yango" class="no-pc">
                     <ul>
-                        <li><a href="#">INICIO</a></li> 
-                        <li><a href="#">CURRICULO</a></li>
-                        <li><a href="#">PROJETOS</a></li>
-                        <li><a href="#">BIOGRAFIA</a></li>
-                        <li class="li-last"><a href="#">CONTATO</a></li>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#proj">Projetos</a></li>
+                        <li><a href="#bio">Biografia</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-
-    <section class="home">
+    <section class="home" onmouseover="menuPhone(0)">
         <div class="cima">
-
+            <div class="no-pc id">
+                <h2>ENGENHEIRO DE TELECOMUNICAÇÕES</h2>
+                <p>Engenheiro com certificações e experiência comprovada nas seguintes áreas</p>
+            </div>
+            <h1 class="no-phone">ADILSON YANGO MUIEBA</h1>
+            <p class="p">Escolha a excelência profissional para a revolução tecnológica da sua empresa.</p>
         </div>
-        <div class="baixo">
-            <div class="box">
-                <div class="box-left">
-
+        <div class="baixo no-phone">
+            <div id="box" class="box">
+                <div class="left">
+                    <p class="p">Experiência e certificações em</p>
+                    <ul class="isues">
+                        <li class="isue phone">
+                            <h3>TI</h3>
+                            <p>Software</p>
+                            <p>Hardware</p>
+                            <p>Cyber segurança</p>
+                        </li>
+                        <li class="isue phone center">
+                            <h3>Telecom</h3>
+                            <p>Redes</p>
+                            <p>T.E. de Fibra óptica</p>
+                            <p>Redes FTTH e GPON</p>
+                        </li>
+                        <li class="isue phone">
+                            <h3>DEV</h3>
+                            <p>C++</p>
+                            <p>Phyton</p>
+                            <p>Web front end</p>
+                        </li>
+                    </ul>
                 </div>
-                <div class="box-right">
+                <div class="right">
 
                 </div>
             </div>
         </div>
+        <div id="bph" class="no-pc baixo-phone">
+            <h3 id="h-isue" class="h-isue">JUNTISTA</h3>
+
+        </div>
     </section>
     
+    <a id="proj"></a>
+    <section class="projetos" onmouseover="menuPhone(0)">
+        <div class="cima">
+            <div class="no-pc id">
+                <h2>ENGENHEIRO DE TELECOMUNICAÇÕES</h2>
+                <p>Engenheiro com certificações e experiência comprovada nas seguintes áreas</p>
+            </div>
+            <h1 class="no-phone">ADILSON YANGO MUIEBA</h1>
+            <p class="p">Escolha a excelência profissional para a revolução tecnológica da sua empresa.</p>
+        </div>
+        <div class="baixo no-phone">
+            <div id="box" class="box">
+                <div class="left">
+                    <p class="p">Experiência e certificações em</p>
+                    <ul class="isues">
+                        <li class="isue phone">
+                            <h3>TI</h3>
+                            <p>Software</p>
+                            <p>Hardware</p>
+                            <p>Cyber segurança</p>
+                        </li>
+                        <li class="isue phone center">
+                            <h3>Telecom</h3>
+                            <p>Software</p>
+                            <p>Hardware</p>
+                            <p>Cyber segurança</p>
+                        </li>
+                        <li class="isue phone">
+                            <h3>DEV</h3>
+                            <p>Web front end</p>
+                            <p>C++</p>
+                            <p>Phyton</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right">
+
+                </div>
+            </div>
+        </div>
+        <div id="bph" class="no-pc baixo-phone">
+            <h3 id="h-isue" class="h-isue">JUNTISTA</h3>
+
+        </div>
+    </section>
+
+    <a id="bio"></a>
+    <section class="bio" onmouseover="menuPhone(0)">
+        <div class="esquerda no-phone">
+            
+        </div>
+        <div class="direita">
+            <p><b>Adilson Yango Muieba</b>, Nascido aos 12 de junho de 2001
+            asjdbkajdnfl,hjaldmkjnnm c w djc wemncwecwe oiwec wejnlken ewkce kewc
+         cewknc ewlk,m cklwe,clk ewc  wjkleckl welkn lweclçwke pcim eclknwlek ckl
+         wdc weclkwe,.c wliqec qwdckwelcmwec
+        w  wlec lkwelckwmelknclçe,cjbadkl clkwnecm lekc djcpwqe cqoeclkc wekmq clk s
+    </p>
+        </div>
+    </section>
+
+
+    
+    <section class="contacto" onmouseover="menuPhone(0)">
+        <a id="contacto"></a>
+        <div class="cima">
+            <div class="forms">
+                <form class="form0" action="" method="post">
+                    <fieldset class="field1">
+                        <legend>Fale com Adilson Yango Muieba</legend>
+                        <fieldset class="field2 float-left">
+                            <legend>Identificação</legend>
+                            <label for="nome">Nome singular ou entidade</label>
+                            <input id="nome" name="nome" type="text" class="input" placeholder="Nome ou entidade" required>
+                            <label for="email">E-mail</label>
+                            <input id="email" name="email" type="email" class="input" placeholder="exemplo@ym.mu" size="">
+                            <label for="tel">Telefone</label>
+                            <input id="tel" type="tel" class="input" placeholder="+ 244 923 367 959" size="13">
+                        </fieldset>
+                        <fieldset class="field2 float-right">
+                            <legend>Assunto</legend>
+                            <label for="interesse">Interesse em</label>
+                            <select name="interesse" id="interesse" class="input" required>
+                                <option value="Telecom" selected>Engº de Telecomunicações</option>
+                                <option value="dev">Programador</option>
+                                <option value="ti">Técnico de TI</option>
+                                <option value="ti">Parceria com a SYYT</option>
+                            </select>
+                            <label for="mensagem">Mensagem</label>
+                            <textarea name="mensagem" id="mensagem" cols="30" rows="5" maxlength="500" placeholder="Escreva aqui a sua mensagem" class="input"></textarea>
+                        </fieldset>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="baixo no-phone">
+            
+    </section>
 </body>
+<script  src="script.js"></script>
 </html>
