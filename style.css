@@ -61,8 +61,7 @@ nav#menu{
 }
 header nav#menu ul li{ 
     padding: .3rem;
-    border-radius: .5rem; 
-    cursor: pointer;
+    border-radius: .5rem;
     font-size: 1.3rem;
     list-style: none;
     display: inline-block;
@@ -76,9 +75,6 @@ header nav#menu ul li:hover{
     color: #070039;
 }
 
-section#inicio{
-    display: none;
-}
 
 div.conteudo{
     display: flex;
@@ -167,10 +163,19 @@ div.small-box{
     display: inline-block;
     margin: 10px;
     width: 22%;
-    height: 50vh;
+}
+
+div.bottom-box{
+    text-align: center;
+    border-radius: 50px 0 0 0;
+    border: 2px solid white;
+    display: inline-block;
+    margin: 10px;
+    min-width: 87vw;
 }
 
 .img-small-box{
+    padding: 5px;
     width: 50%;
 }
 

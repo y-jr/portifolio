@@ -3,9 +3,13 @@
     font-family: 'BebasNeue';
     src: url('fontes/BebasNeue-Regular.ttf');
 }
+@font-face {
+    font-family: 'roboto';
+    src: url('fontes/Roboto-Light.ttf');
+}
 *{
     margin: 0;
-    font-family: BebasNeue;
+    font-family: 'roboto';
 }
 .no-phone{
     display: none;
@@ -16,6 +20,7 @@ body{
 }
 
 header{
+    font-family: 'roboto';
     position: fixed;
     top: 0;
     height: 10vh;

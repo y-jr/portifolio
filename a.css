@@ -1,0 +1,186 @@
+<header>
+        <div class="header">
+            <div class="span">
+                <span><img src="media/icon2.png" alt="logo Yango"></span>
+                <div>Portfólio</div>
+            </div>
+            <div class="id no-pc">
+                <h1>PORTIFÓLIO - ADILSON YANGO MUIEBA</h1>
+            </div>
+            <div class="menu">
+                <button id="btn-menu" class="btn-menu-phone no-pc" onclick="menuPhone(1)"></button>
+                <nav class="menu no-phone" id="navMenu">
+                <img src="media/yango.png" alt="Yango" class="no-pc">
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Projetos</a></li>
+                        <li><a href="#">Biografia</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="home" onmouseover="menuPhone(0)">
+        <div class="cima">
+            <div class="no-pc id">
+                <h2>ENGENHEIRO DE TELECOMUNICAÇÕES</h2>
+                <p>Engenheiro com certificações e experiência comprovada nas seguintes áreas</p>
+            </div>
+            <h1 class="no-phone">ADILSON YANGO MUIEBA</h1>
+            <p class="p">Escolha a excelência profissional para a revolução tecnológica da sua empresa.</p>
+        </div>
+        <div class="baixo no-phone">
+            <div id="box" class="box">
+                <div class="left">
+                    <p class="p">Experiência e certificações em</p>
+                    <ul class="isues">
+                        <li class="isue phone">
+                            <h3></h3>
+                        </li>
+                        <li class="isue phone">a</li>
+                        <li class="isue phone">a</li>
+                    </ul>
+                </div>
+                <div class="right">
+
+                </div>
+            </div>
+        </div>
+        <div id="bph" class="no-pc baixo-phone">
+            <h3 id="h-isue" class="h-isue">JUNTISTA</h3>
+
+        </div>
+    </section>
+
+
+
+
+
+
+    
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('fontes/BebasNeue-Regular.ttf');
+}
+@font-face {
+    font-family: 'roboto';
+    src: url('fontes/Roboto-Light.ttf');
+}
+*{
+    margin: 0;
+    font-family: 'roboto';
+}
+.no-pc{
+    display: none;
+}
+body{
+    background-image: url('media/back.jpg');
+    backdrop-filter: blur(8px);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 200vh;
+
+}
+
+header{
+    z-index: 15;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.844), #606164);
+}
+div.header{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+div.span{
+    font-size: 2vw;
+    font-weight: bold;
+    margin: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 15%;
+}
+div.menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 85%;
+    padding-right: 30px;
+}
+nav.menu ul li{
+    list-style: none;
+    display: inline-block;
+}
+nav.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 2.3vh;
+    padding: 0 1.5vw 0 1.5vw;
+    transition: all .3s;
+}
+nav.menu ul li a:hover{
+    color: #0edbf7;
+    font-size: 2.5vh;
+}
+
+/*SECTION*/
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-end;
+    height: 90vh;
+    padding-top: 10vh;
+}
+div.cima{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+}
+div.cima h1{
+    font-size: 5vw;
+    text-shadow: 1px 1px 3px #ffffff;
+    color: #2c2c2e;
+}
+p.p{
+    padding: 20px;
+    font-size: 1.5vw;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px #000000;
+    font-weight: bold;
+}
+div.baixo{
+    text-align: center;
+    height: 60vh;
+}
+div.baixo p.p{
+    margin-top: 10vh;
+}
+ul.isues{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -3vw;
+}
+li.isue{
+    display: flex;
+    border: 2px solid #2c2c2e;
+    box-shadow: 1px 1px 3px #ffffff;
+    border-radius: 25vw;
+    margin: 20px;
+    width: 12.5vw;
+    height: 12.5vw;
+    background: rgb(105,105,112);
+    background: -moz-radial-gradient(circle, rgba(105,105,112,0.8) 0%, rgba(76,76,80,0.8) 49%, rgba(44,44,46,0.8) 100%);
+    background: -webkit-radial-gradient(circle, rgba(105,105,112,0.8) 0%, rgba(76,76,80,0.8) 49%, rgba(44,44,46,0.8) 100%);
+    background: radial-gradient(circle, rgba(105,105,112,0.8) 0%, rgba(76,76,80,0.8) 49%, rgba(44,44,46,0.8) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#696970",endColorstr="#2c2c2e",GradientType=1);
+}
